@@ -1,0 +1,410 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color: #fff;
+    text-align: justify;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.nav-bar{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(back.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.header-area {
+    backdrop-filter: blur(20px);
+    position: fixed;
+    width: 100%;
+    padding: 12px 30px;
+    z-index: 999;
+    border-bottom: 2px solid #909090ad;
+}
+.header-container {
+    display: table;
+    width: 100%;
+    margin: auto;
+}
+.site-logo {
+    float: left;
+    padding: 17px 0px;
+}
+.site-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px;
+}
+.site-logo span {
+    color: #a0a0a0;
+}
+.site-nav-menu {
+    float: right;
+}
+.primary-menu{
+    list-style: none;
+}
+.primary-menu li {
+    display: inline-block;
+    margin: 21px 5px;
+}
+.primary-menu a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 15px 10px;
+    transition: .5s;
+}
+.primary-menu a:hover,
+.primary-menu .active {
+    color:#a0a0a0;   
+}
+.primary-menu li a:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #3cff7d;
+    bottom: 0px;
+    left: 0;
+    transition: all .5s;
+}
+.primary-menu li a:hover:after {
+    width: 100%;
+}
+.primary-menu li .active:after{
+    width: 100%;
+}
+.mobile-nav{
+    display: none;
+}
+.mobile-nav i{
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    font-size: 24px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+.main_body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.main_body .heading h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 55px;
+    text-shadow: #111;
+}
+.main_body .heading p{
+    color: #fff;
+    position: relative;
+    top: 20px;
+}
+.main_body .heading h2 a{
+    position: relative;
+    top: 50px;
+    border: 1px solid #fff;
+    background-color: #3cff7d;
+    color: #fff;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.main_body .heading h2 a:hover{
+    color: #3cff7d;
+    background-color: #fff;
+    border: 1px solid #3cff7d;
+}
+.main_body2{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(nft3.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.colonies__, .wtf{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+.colonies__ .colo h3, .wtf .tf h3{
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.colonies__ .colo p, .wtf .tf p{
+    padding-right: 90px;
+    color: #a0a0a0;
+}
+ .nft_colo img, .nft_wtf img{
+    border-radius: 25px;
+    box-shadow: 0px 4px 25px ;
+ }
+ .podcast__, .doa{
+     display: flex;
+     justify-content: space-around;
+     padding: 50px;
+ }
+ .podcast__ .pod h3, .doa .do h3{
+    color: #fff;
+    font-size: 60px;
+    padding-left: 90px;
+    text-transform: uppercase;
+ }
+ .podcast__ .pod p, .doa .do p{
+     color: #a0a0a0;
+     padding-left: 90px;
+ }
+ .doa_image img, .nft__image img{
+    border-radius: 25px;
+    box-shadow: 0px 4px 25px ;
+ }
+ .swiper{
+     width: 500px; 
+ }
+ .tv{
+     display: inline-block;
+     justify-content: center;
+ }
+ .tv .tvh h3{
+     display: flex;
+     justify-content: center;
+     color: #fff;
+     font-size: 60px;
+ }
+ .tv .tvh p{
+    color: #a0a0a0;
+    padding: 0 150px 30px 150px;
+    text-align: center;
+ }
+.team__ h3{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    padding: 40px;
+}
+.team_ img{
+    border-radius: 50%;
+    width:70px;
+    height: 70px;
+    position: relative;
+    left: 120px;
+    top: 25px;
+}
+.tm1, .tm2 , .tm3 , .tm4 , .tm5, .tm6, .tm7, .tm8{
+    background-color: #27bd59;
+    width: 300px;
+    height: 350px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: #fff;
+}
+.cover_{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+.team_ h4{
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    left: 130px;
+    top: 45px;
+}
+.team_ p {
+    padding: 70px 0 0 0;
+}
+.team_ a{
+    color: #fff;
+    font-size: 50px;
+    position: relative;
+    left: 120px;
+    top: 40px;
+}
+.team_ a:hover{
+    color: #3cff7d;
+}
+audio{
+    position: relative;
+    top: 100px;
+}
+audio::-webkit-media-controls-panel{
+    background-color: #27bd59;
+}
+audio::-webkit-media-controls-play-button{
+    background-color: #a0a0a0;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-current-time-display{
+    color: #333;
+}
+audio::-webkit-media-controls-time-remaining-display{
+    color: #333;
+}
+audio::-webkit-media-controls-timeline{
+    border-radius: 40px;
+    background-color: #a0a0a0;
+}
+audio::-webkit-media-controls-volume-slider{
+    background-color: #a0a0a0;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+audio::-webkit-media-controls-mute-button{
+    background-color: #a0a0a0;
+    border-radius: 50%;
+}
+.last{
+    background-color: #111;
+    width: 100%;
+    height: 10vh;
+}
+.last_ span{
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+@media screen and (max-width: 955px) {
+    .site-nav-menu {
+        float: none;
+        position: absolute;
+        background-color: #27bd59;
+        z-index: 1;
+        width: 100%;
+        left: 0;
+        top: 85px;
+        padding: 30px 0px 150px 0px;
+        border-top: 1px solid #4a4848;
+        clip-path: circle(0% at 100% 0%);
+        transition: all .8s;
+    }
+    .primary-menu li {
+        display: block;
+        text-align: center;
+        margin: 25px 5px;
+    }
+    .mobile-nav{
+        display: block;
+    }
+    .mobile-menu {
+        clip-path: circle(112% at 100% 0%);
+    }
+    .primary-menu li a:after{
+        display: none;
+    }
+   .main_body .heading h1{
+       font-size: 50px;
+   }
+   .colonies__, .wtf{
+       display: block;
+       justify-content: center;
+   }
+   .colonies__ .colo p, .wtf .tf p{
+       padding:30px ;
+       display: flex;
+       justify-content: center;
+   }
+   .colonies__ .colo h3, .wtf .tf h3{
+       display: flex;
+       justify-content: center;
+   }
+   .nft_colo img,.nft_wtf img{
+       display: block;
+       justify-content:center;
+       height: 300px;
+       width: 300px;
+       position: relative;
+      left: 50px;
+   }
+   .podcast__, .doa{
+    display: block;
+    justify-content: center;
+   }
+ .podcast__ .pod p, .doa .do p{
+    padding:5px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 300px;
+   }
+   .podcast__ .pod h3, .doa .do h3{
+    display: block;
+    justify-content: center;
+    position: relative;
+    bottom: 300px;
+    font-size: 40px;
+   }
+   .doa_image img, .nft__image img{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    justify-content:center;
+    position: relative;
+    top: 300px;
+    left: 50px;
+   }
+   .podcast__ .pod p{
+       position: relative;
+       bottom: 350px;
+   }
+   .podcast__ .pod h3{
+    position: relative;
+    bottom: 360px;
+   }
+   .nft__image img{
+       position: relative;
+       top: 170px;
+   }
+   .doa_image img{
+    position: relative;
+    top: 320px;
+   }
+   .tv .tvh p{
+    padding: 5px;
+    text-align: center;
+ }
+ .swiper{
+     width: 300px;
+ }
+ .leg p{
+    padding: 0 50px 30px 50px;
+    text-align: left;
+ }
+ .cover_{
+    display: block;
+    justify-content: center;
+}
+}
